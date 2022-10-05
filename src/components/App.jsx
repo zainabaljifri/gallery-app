@@ -11,7 +11,6 @@ function App() {
       <Heading />
       <div className="App">
         <div className="container">
-          {/* <h1 className="title">Gallery App</h1> */}
           <SearchPhotos />
         </div>
       </div>
