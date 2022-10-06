@@ -86,7 +86,7 @@ input:-webkit-autofill:focus{
 .button {
     background-color: lightgray;
     border: none;
-    padding: 0.7rem 1rem;
+    padding: 0.5rem 1rem;
     color: white;
     border-radius: 100%;
     cursor: pointer;
@@ -117,7 +117,7 @@ input:-webkit-autofill:focus{
         width: 80%;
     }
     .input {
-        width: 70%;
+        width: 50%;
     }
 }
 
