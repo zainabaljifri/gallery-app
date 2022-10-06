@@ -111,6 +111,9 @@ input:-webkit-autofill:focus{
     .input-group{
         width: 90%;
     }
+    .input {
+        width: 50%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
