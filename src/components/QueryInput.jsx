@@ -1,18 +1,24 @@
-import React from "react";
+import React ,{useState} from "react";
 
 export default function QueryInput(props) {
     return (
-        <form className="form" onSubmit={props.onSubmit}>
-            <label className="label" htmlFor="query">📷</label>
+            <div className="input-group">
+            <div className="search">
+            <i className="fa-solid fa-magnifying-glass fa-lg"></i>
             <input
                 type="text"
+                id="input"
                 name="query"
                 className="input"
                 placeholder='Try "dog" or "apple"'
                 value={props.value}
                 onChange={props.onChange}
             />
-            <button type="submit" className="button">Search</button>
-        </form>
+
+
+            </div>
+            <button className="button" id="clear-btn" onClick={props.onClick} hidden={(props.value=='') ? 'hidden' : ''}><i className="fa-solid fa-xmark"></i></button>
+            </div>
+
     );
 }

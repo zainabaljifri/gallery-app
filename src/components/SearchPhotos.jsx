@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import QueryInput from "./QueryInput";
 import Results from "./Results";
-import Heading from "./Heading";
 
 export default function SearchPhotos() {
   const [query, setQuery] = useState("");
@@ -20,9 +19,19 @@ export default function SearchPhotos() {
     setPics(result);
   };
   
+
+  useEffect(() => {
+    fetch(
+      // `https://api.unsplash.com/search/photos?page=1&query=${query}&client_id=${Access_Key}&per_page=10`
+      `https://pixabay.com/api/?key=${Access_Key2}&q=${query}&per_page=30`
+      )
+      .then((response) => response.json())
+      // .then((json) => setPics(json.results));
+      .then((json) => setPics(json.hits));
+  }, [query]);
   return (
     <>
-    <QueryInput onSubmit={fetchRequest} value={query} onChange={(e) => setQuery(e.target.value)}/>
+    <QueryInput value={query} onClick={() => setQuery('')} onChange={(e) => setQuery(e.target.value)}/>
       <Results array={pics}/>
     </>
   );
