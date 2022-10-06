@@ -48,7 +48,7 @@ footer {
 .input-group{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     margin: auto;
     color: gray;
     line-height: 2.8rem;
