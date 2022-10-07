@@ -23,7 +23,7 @@ export default function SearchPhotos() {
   };
   const handlePageCount = (json) => {
     setPics(json.hits);
-    setPageCount(Math.round(json.totalHits / picsPerPage));
+    setPageCount(Math.ceil(json.totalHits / picsPerPage));
   };
   // const Access_Key1 = 'BMHgcnpJzN0JOSOwbmfG7jRNqiGE2f62aISEIS2XVZE';
   const Access_Key2 = '30343985-5d8c3a7a0f500ff0d60685014'
