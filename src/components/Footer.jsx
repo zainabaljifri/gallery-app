@@ -1,7 +1,6 @@
 import React from "react";
 
-function Footer(){
-
+function Footer() {
     return <footer>All rights reserved</footer>
 }
 

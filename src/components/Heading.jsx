@@ -1,9 +1,8 @@
 import React from "react";
 
-function Heading(){
-
+function Heading() {
     return <header>
-    <h1 className="title">Photos Search Engine</h1>
+        <h1 className="title">Photos Search Engine</h1>
     </header>
 }
 

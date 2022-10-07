@@ -14,7 +14,7 @@ function App() {
           <SearchPhotos />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

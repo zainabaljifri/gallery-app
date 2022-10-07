@@ -2,17 +2,12 @@ import React from "react";
 
 export default function Results(props) {
     return (
-        <div className="card-list">
-            {(props.array).map((pic) => (
-                <img
-                    key={pic.id}
-                    className="card--image"
-                    alt={pic.tags}
-                    src={pic.webformatURL}
-                    width="100%"
-                    height="100%"
-                />
-            ))}
-        </div>
-    );
+        <div className="card"><img
+            className="card--image"
+            alt={props.description}
+            src={props.src}
+            width="50%"
+            height="50%"
+        /></div>
+    )
 }
