@@ -13,6 +13,7 @@ header {
     /* background-image: url("https://images.unsplash.com/photo-1599509221568-2d6c928faa88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80"); */
     background-image: url("../images/image7.JPG");
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 footer {
@@ -122,7 +123,7 @@ input:-webkit-autofill:focus{
         width: 80%;
     }
     .input {
-        width: 50%;
+        width: 70%;
     }
 }
 
