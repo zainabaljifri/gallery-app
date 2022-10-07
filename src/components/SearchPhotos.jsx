@@ -45,7 +45,7 @@ export default function SearchPhotos() {
     <>
       <QueryInput value={query} onClick={handleQueryClear} onChange={handleQueryChange} />
       <Results array={pics} />
-      <Pagination className="pagintation" count={pageCount} page={page} onChange={handlePageChange} />
+      <Pagination className="pagintation" count={pageCount} page={page} onChange={handlePageChange} size="small"/>
     </>
   );
 }
